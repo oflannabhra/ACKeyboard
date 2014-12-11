@@ -55,6 +55,8 @@ To enable the keyboard, open the Settings app and go to:
 
 General > Keyboard > Keyboards > Add New Keyboard... > ACKeyboard
 
+Note: There is a [known](https://developer.apple.com/library/ios/releasenotes/DeveloperTools/RN-Xcode/Chapters/xc6_release_notes.html) [bug](http://stackoverflow.com/questions/26473422/keyboard-extension-not-working-with-ios-8-1-simulator) in XCode 6.1 that prevents loading keyboard extensions in iOS Simulator. Supposedly, certain system apps such as Spotlight or Calendar can load keyboard extensions; however, this obviously does not allow for debugging the extension. Until this bug is resolved by Apple, on-device testing is recommended.
+
 ## Extending and making your own keyboard
 
 ### Keys
